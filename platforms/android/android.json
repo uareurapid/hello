@@ -1,0 +1,43 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"PurchasesPlugin\"><param name=\"android-package\" value=\"com.revenuecat.purchases.PurchasesPlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-annotated-plugin-android": {
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-purchases": {
+      "PACKAGE_NAME": "com.example.hello"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-purchases.plugin",
+      "file": "plugins/cordova-plugin-purchases/www/plugin.js",
+      "pluginId": "cordova-plugin-purchases",
+      "clobbers": [
+        "Purchases"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-annotated-plugin-android": "1.0.4",
+    "cordova-plugin-purchases": "3.1.0"
+  }
+}
